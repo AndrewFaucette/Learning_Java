@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 /** The dealer's state and dealer-specific behavior hooks. */
 public class Dealer extends Player {
-    public Dealer(String name) { super(name); }
-    int playersMax = 0;
-    int playersMin = 21;
+    public Dealer(String name, int points) { super(name, points); }
+    //int playersMax = 0;
+    //int playersMin = 21;
 
     public boolean shouldHit(List<Player> players) {
-        if (players != null) {
+        /*if (players != null) {
             for (Player player : players) {
                 if (player.getHand().getValue() > playersMax && !player.getHand().isBust()) {
                     playersMax = player.getHand().getValue();
@@ -24,7 +24,7 @@ public class Dealer extends Player {
         if (getHand().isBlackjack()) { return false; }
         else if (getHand().getValue() > playersMax) { return false; }
         else if (getHand().getValue() < playersMin) { return true; }
-        else if (getHand().getValue() < 17) {
+        else*/ if (getHand().getValue() < 17) {
             return true;
         }
         return false;

@@ -34,6 +34,6 @@ I found these websites useful in developing this software:
 
 The following items I plan to fix, improve, and/or add to this project in the future:
 
-* [ ] First thing here
-* [ ]
-* [ ]
+* [ ] Add doubling down, and splitting
+* [ ] If it's possible, keep drawing from the same deck until it's almost empty
+* [ ] Add the ability to start with a variable number of decks
